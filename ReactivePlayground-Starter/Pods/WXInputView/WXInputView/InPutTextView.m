@@ -42,26 +42,23 @@
 }
 - (void)addRacSingles{
 
-    @weakify(self);
+    WeakSelfType blockSelf = self;
     [[self rac_signalForSelector:@selector(setFrame:)]subscribeNext:^(id x) {
-        @strongify(self);
-        self.textView.frame = CGRectMake(20, 10, self.frame.size.width-40, self.frame.size.height-20);
+        blockSelf.textView.frame = CGRectMake(20, 10, blockSelf.frame.size.width-40, blockSelf.frame.size.height-20);
     }];
     
     [[[NSNotificationCenter defaultCenter] rac_addObserverForName:UIKeyboardWillShowNotification object:nil]subscribeNext:^(id x) {
-        @strongify(self);
         NSDictionary *userInfo = [(NSNotification*)x userInfo];
         NSValue *aValue = [userInfo objectForKey:UIKeyboardFrameEndUserInfoKey];
         CGRect keyboardRect = [aValue CGRectValue];
-        [self setBottom:keyboardRect.origin.y];
+        [blockSelf setBottom:keyboardRect.origin.y];
     }];
     
     [[[NSNotificationCenter defaultCenter] rac_addObserverForName:UIKeyboardWillHideNotification object:nil]subscribeNext:^(id x) {
-        @strongify(self);
         NSDictionary *userInfo = [(NSNotification*)x userInfo];
         NSValue *aValue = [userInfo objectForKey:UIKeyboardFrameEndUserInfoKey];
         CGRect keyboardRect = [aValue CGRectValue];
-        [self setBottom:keyboardRect.origin.y];
+        [blockSelf setBottom:keyboardRect.origin.y];
     }];
     
 
@@ -72,10 +69,9 @@
         CGSize size = [(NSValue *)value CGSizeValue];
         return size.height>=minHeight&&size.height<=maxHeight;
     }]subscribeNext:^(id x) {
-        @strongify(self);
         CGSize size = [(NSValue *)x CGSizeValue];
-        [self setTop:self.top-(size.height - originHeight)];
-        [self setHeight:self.height+(size.height - originHeight)];
+        [blockSelf setTop:blockSelf.top-(size.height - originHeight)];
+        [blockSelf setHeight:blockSelf.height+(size.height - originHeight)];
         originHeight = size.height;
     }];
 }

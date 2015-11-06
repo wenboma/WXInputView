@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = 'WXInputView'
-  s.version      = '1.0.1'
+  s.version      = '1.0.2'
   s.summary      = 'this is weixin inputView '
   s.description  = <<-DESC
                    A longer description of WXInputView in Markdown format.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '5.0'
 
 
-  s.source       = { :git => 'https://github.com/wenboma/WXInputView.git', :tag => '1.0.1' }
+  s.source       = { :git => 'https://github.com/wenboma/WXInputView.git', :tag => '1.0.2' }
 
 
   s.source_files  = "WXInputView", "WXInputView/*"

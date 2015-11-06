@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7AE2327AF5121E6E39A675C9"
-               BuildableName = "libLoopLabel.a"
-               BlueprintName = "LoopLabel"
+               BlueprintIdentifier = "87416B6C0816722FE2CF9B83"
+               BuildableName = "libWXInputView.a"
+               BlueprintName = "WXInputView"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

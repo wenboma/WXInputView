@@ -2,4 +2,4 @@ platform :ios, '7.0'
 
 pod 'ReactiveCocoa'
 pod 'LoopLabel'
-pod 'WXInputView'
+pod 'WXInputView' ,'~> 1.0.1'

@@ -19,8 +19,34 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>WXInputView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>1386FF4401948553C866B4162343B782</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5A9E8A91F259042AD7228463FE769F43</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B1ED418716C2D8F3386967733F8269B9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E8FEAA4C2A88E5380E0D8BD50894DC8B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>
