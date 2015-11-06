@@ -1,0 +1,23 @@
+PODS:
+  - LoopLabel (1.0.0)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - WXInputView (1.0.0):
+    - ReactiveCocoa
+
+DEPENDENCIES:
+  - LoopLabel
+  - ReactiveCocoa
+  - WXInputView
+
+SPEC CHECKSUMS:
+  LoopLabel: f066171b925fe9eb669a7a4002afe293e7eda788
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  WXInputView: b9b650003894679a6e1e42972dec65a3a4def32d
+
+COCOAPODS: 0.38.2
